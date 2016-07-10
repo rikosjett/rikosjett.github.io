@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>rikosjett</title>
+    <description>et sted om teknologi, spill, småprosjekter, og andre innfall jeg får!</description>
+    <link>http://rikosjett.no</link>
+    <atom:link href="http://rikosjett.no/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>Jekyll - websider på en ny måte</title>
+        <description>
+          
+          Jeg har hatt websider i en eller annen form kontinuerlig siden 1996, og det har vært en enorm utvikling siden jeg startet med enkle sider kodet i notepad. Siden det har jeg vært innom en mengde verktøy som Frontpage, Dreamweaver, Drupal, Joomla, og de siste årene har jeg benyttet meg...
+        </description>
+        <pubDate>Sat, 22 Aug 2015 00:00:00 +0200</pubDate>
+        <link>http://rikosjett.no/prosjekter/jekyll/</link>
+        <guid isPermaLink="true">http://rikosjett.no/prosjekter/jekyll/</guid>
+      </item>
+    
+      <item>
+        <title>Nexus Player &amp;#8211; verdt et forsøk?</title>
+        <description>
+          
+          Google lanserte nylig Nexus Player i Norge, og jeg var ikke sen om å bestille en når muligheten bød seg. Som langvarig bruker av Chromecast, var jeg nysgjerrig på om den kunne innfri på noen av svakhetene til den lille pluggen. Her kommer et lite førsteinntrykk etter en drøy ukes...
+        </description>
+        <pubDate>Thu, 14 May 2015 00:00:00 +0200</pubDate>
+        <link>http://rikosjett.no/teknologi/nexus-player-verdt-et-forsok/</link>
+        <guid isPermaLink="true">http://rikosjett.no/teknologi/nexus-player-verdt-et-forsok/</guid>
+      </item>
+    
+      <item>
+        <title>Er du klar for litt nostalgi?</title>
+        <description>
+          
+          Rekk opp hånda, alle som husker Monkey Island, Sam &amp;amp; Max – Hit the road, og Day of the Tentacle! Vekker det minner? Skulle du ønske at du kunne få oppleve fordums eventyr igjen? Følg med, for her kommer et tips for å bringe klassikerne tilbake! Sam &amp;amp; Max &amp;#8211;...
+        </description>
+        <pubDate>Sun, 19 Apr 2015 00:00:00 +0200</pubDate>
+        <link>http://rikosjett.no/spill/er-du-klar-for-litt-nostalgi/</link>
+        <guid isPermaLink="true">http://rikosjett.no/spill/er-du-klar-for-litt-nostalgi/</guid>
+      </item>
+    
+      <item>
+        <title>5 steg til custom firmware på Asus RT-N66U</title>
+        <description>
+          
+          ASUS RT-N66U er kjent for å være både god og stabil, og regnes som en av de beste routere på forbrukermarkedet. Men dersom du synes programvaren blir litt begrenset, kan du enkelt installere en tredjeparts-firmware og gjøre den enda bedre. Og om du gjør alt rett, er du oppe og...
+        </description>
+        <pubDate>Mon, 06 Apr 2015 00:00:00 +0200</pubDate>
+        <link>http://rikosjett.no/prosjekter/5-steg-til-custom-firmware-pa-asus-rt-n66u/</link>
+        <guid isPermaLink="true">http://rikosjett.no/prosjekter/5-steg-til-custom-firmware-pa-asus-rt-n66u/</guid>
+      </item>
+    
+      <item>
+        <title>Passord og internett &amp;#8211; KeePass og nettlesere</title>
+        <description>
+          
+          I løpet av en dag er de fleste av oss innom flere tjenester på internett som krever en form for innlogging. Når vi samtidig vet at et passord bør være unikt, og ikke minst vanskelig å knekke, kan dette fort bli til en tungvinn affære. Må det være sånn? Dette er...
+        </description>
+        <pubDate>Mon, 06 Oct 2014 00:00:00 +0200</pubDate>
+        <link>http://rikosjett.no/programvare/passord-og-internett-keepass-og-nettlesere/</link>
+        <guid isPermaLink="true">http://rikosjett.no/programvare/passord-og-internett-keepass-og-nettlesere/</guid>
+      </item>
+    
+      <item>
+        <title>Passordhåndtering med KeePass</title>
+        <description>
+          
+          De fleste nettbrukere har nok fått med seg at man bør lage et komplisert passord på nett-tjenester man benytter, selv om det også jevnlig kommer artikler som forteller oss at vi kanskje ikke er så flinke til akkurat det. Det som ofte kan være et problem er at enkelte passord...
+        </description>
+        <pubDate>Wed, 26 Mar 2014 00:00:00 +0100</pubDate>
+        <link>http://rikosjett.no/programvare/passordhandtering-med-keepass/</link>
+        <guid isPermaLink="true">http://rikosjett.no/programvare/passordhandtering-med-keepass/</guid>
+      </item>
+    
+      <item>
+        <title>Stanford Uni &amp;#8211; CS106A Assignments</title>
+        <description>
+          
+          My solutions for the assignments of Stanford University’s CS106A[YouTube]. All comments in norwegian (soon to be translated to english). All code in english.(Updated links 2014: Website, Youtube Channel)
+
+Assignments on Github
+
+
+        </description>
+        <pubDate>Mon, 10 May 2010 00:00:00 +0200</pubDate>
+        <link>http://rikosjett.no/prosjekter/stanford-uni-cs106a-assignments/</link>
+        <guid isPermaLink="true">http://rikosjett.no/prosjekter/stanford-uni-cs106a-assignments/</guid>
+      </item>
+    
+      <item>
+        <title>Trådløse musikksoner</title>
+        <description>
+          
+          Hvem sier at man må kjøpe et ferdig system for å få spilt musikken sin i hele boligen sin? Mange har sikkert merket seg systemer som feks SONOS, og synes det virker som en fantastisk mulighet. Men det er jo altfor enkelt å kjøpe et ferdig system. Enhver nerd med...
+        </description>
+        <pubDate>Sun, 24 May 2009 00:00:00 +0200</pubDate>
+        <link>http://rikosjett.no/prosjekter/tra%CC%8Adl%C3%B8se-musikksoner/</link>
+        <guid isPermaLink="true">http://rikosjett.no/prosjekter/tra%CC%8Adl%C3%B8se-musikksoner/</guid>
+      </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>5 steg til custom firmware på Asus RT-N66U</title>
+
+  <meta name="author" content="Ronnie André Bjørvik Sletta" />
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="rikosjett - et sted om teknologi, spill, småprosjekter, og andre innfall jeg får!" href="/feed.xml" />
+
+  
+    
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+    
+    
+  
+  
+    
+      <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    
+      <link rel="stylesheet" href="/css/main.css" />
+    
+  
+  
+  
+    
+	  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+    
+	  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+    
+  
+
+    
+  
+  
+  
+  
+  
+  <!-- Facebook OpenGraph tags -->
+  <meta property="og:title" content="5 steg til custom firmware på Asus RT-N66U" />
+  <meta property="og:type" content="website" />
+  
+  
+  <meta property="og:url" content="http://rikosjett.no/prosjekter/5-steg-til-custom-firmware-pa-asus-rt-n66u//" />
+  
+  
+  
+  <meta property="og:image" content="http://rikosjett.no/images/ronnie_avatar.png" />
+  
+</head>
+
+  <body>
+  
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://rikosjett.no">rikosjett</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+	    
+        <li>
+		  <a href="/">Hjem</a>
+		</li>
+		
+        <li>
+		  <a href="/arkiv">Arkiv</a>
+		</li>
+		
+        <li>
+		  <a href="/om">Om</a>
+		</li>
+		
+      </ul>
+    </div>
+	
+	
+	<div class="avatar-container">
+	  <div class="avatar-img-border">
+	    <a href="http://rikosjett.no ">
+	      <img class="avatar-img" src="/images/ronnie_avatar.png" />
+		</a>
+	  </div>
+	</div>
+	
+	
+  </div>
+</nav>  
+
+    <div role="main" class="container main-content">
+      <header class="header-post">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <div class="post-heading">
+        <h1>5 steg til custom firmware på Asus RT-N66U</h1>
+        
+        <span class="post-meta"> Lagt til
+  <time datetime="2015-04-06T00:00:00Z" itemprop="datePublished">
+  6
+  April,
+    
+  2015</time></span>
+      </div>
+     </div>
+  </div>
+</header>
+
+<article>
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+	  <p><em>ASUS RT-N66U</em> er kjent for å være både god og stabil, og regnes som en av de beste routere på forbrukermarkedet. Men dersom du synes programvaren blir litt begrenset, kan du enkelt installere en tredjeparts-firmware og gjøre den enda bedre. Og om du gjør alt rett, er du oppe og kjører innen 30 minutter.</p>
+
+<!-- _includes/image.html -->
+<div class="post-image-wrapper">
+    
+        <img class="post-img" src="/images/tomatoUSB/asus-forfra_63031e_0.jpg" alt="ASUS Ruter forfra" />
+    
+    
+        <p class="post-image-caption"></p>
+    
+</div>
+
+<blockquote>
+  <p><strong>ADVARSEL</strong>: Denne posten er kun til informasjon, og ment for personer som vet hva de driver med. Dersom terminologien på noe som helst tidspunkt virker skremmende og fremmed vil jeg anbefale å finne en mer utfyllende guide, eventuelt la routeren beholde original firmware. Dersom noe uforutsett skjer underveis, eller det oppstår en brukerfeil, vil det kunne gjøre at routeren ikke kan brukes uten å legge inn original firmware på nytt. Det kan også i ytterste konsekvens gjøre at routeren din blir ubrukelig. Les nøye gjennom stegene før du bestemmer deg om du vil gjøre det, og dersom du velger å følge stegene, skjer det på eget ansvar.</p>
+</blockquote>
+
+<h3 id="steg-til-tomatousb">5 steg til TomatoUSB</h3>
+
+<ol>
+  <li>
+    <p>Last ned siste versjon av Shibbys TomatoUSB (pr idag build5x-128-EN). «Asus RT-N66u 64k» er den som virker på RT-N66U, og last ned filen med AIO (All in one) i navnet. <a href="http://tomato.groov.pl/download/K26RT-N/">[http://tomato.groov.pl/download/K26RT-N/]</a></p>
+  </li>
+  <li>
+    <p>Tøm <strong>NVRAM</strong> på routeren – hold nede <strong>WPS</strong> knapp og restart routeren. Hold WPS i <strong>10 sekunder</strong> for å tømme NVRAM.</p>
+  </li>
+  <li>
+    <p>Boot router i recovery mode – hold nede <strong>RESET</strong> og restart routeren. Hold RESET i <strong>10 sekunder</strong>.</p>
+  </li>
+  <li>
+    <p>Kontroller at din PC har en IP i 192.168.1.X serien. Gå til 192.168.1.1 i nettleseren. Du kommer da til det webbaserte verktøyet på routeren.</p>
+  </li>
+  <li>
+    <p>Velg filen du lastet ned fra Shibby, og last opp. Du kan følge statusen nederst i nettleseren din. Når den er lastet opp får du melding i nettleseren, og du vil se at det begynner å blinke på routeren.<strong>VIKTIG</strong>: NÅ MÅ DU VENTE I CA 15-20 MINUTTER, OG LA ROUTEREN JOBBE FERDIG PÅ EGENHÅND. Routeren bruker lang tid på å installere firmwaren, og det er ingen måte å se fremgangen på bortsett fra at routeren restarter når den er ferdig. Da kan du gå til 192.168.1.1 igjen,og begynne oppsettet av din nye router. Brukernavn er root. Passord er admin. Dette bør du skifte med en gang du begynner oppsettet,for å sikre routeren din.</p>
+  </li>
+</ol>
+
+<p><!-- _includes/image.html --></p>
+<div class="post-image-wrapper">
+    
+        <img class="post-img" src="/images/tomatoUSB/TomatoUSB__Status__Overview.png" alt="TomatoUSB__Status__Overview" />
+    
+    
+        <p class="post-image-caption">TomatoUSB Status Overview</p>
+    
+</div>
+
+<blockquote>
+  <h4 id="kilder">Kilder:</h4>
+
+  <ul>
+    <li><a href="http://www.shadowandy.net/2012/03/asus-rt-n66u-tomatousb-firmware-flashing-guide.htm">http://www.shadowandy.net/2012/03/asus-rt-n66u-tomatousb-firmware-flashing-guide.htm</a></li>
+    <li><a href="https://gist.github.com/joshenders/3941269">https://gist.github.com/joshenders/3941269</a></li>
+    <li><a href="http://www.dd-wrt.com/wiki/index.php/Asus_RT-N66U">http://www.dd-wrt.com/wiki/index.php/Asus_RT-N66U</a></li>
+  </ul>
+</blockquote>
+
+
+	</div>
+  </div>
+</article>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    <ul class="pager blog-pager">
+      
+      <li class="previous">
+        <a href="/programvare/passord-og-internett-keepass-og-nettlesere/" data-toggle="tooltip" data-placement="top" title="Passord og internett &#8211; KeePass og nettlesere">&larr; Eldre innlegg</a>
+      </li>
+      
+      
+      <li class="next">
+        <a href="/spill/er-du-klar-for-litt-nostalgi/" data-toggle="tooltip" data-placement="top" title="Er du klar for litt nostalgi?">Nyere innlegg &rarr;</a>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+
+<div class="row disqus-comments">
+  <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    
+<div class="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+	    var disqus_shortname = 'rikosjett';
+	    // ensure that pages with query string get the same discussion
+            var url_parts = window.location.href.split("?");
+            var disqus_url = url_parts[0];	    
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+
+  </div>
+</div>
+
+
+    </div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+          
+          <li>
+            <a href="https://github.com/rsletta" title="GitHub">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+		  
+          <li>
+            <a href="https://twitter.com/rsletta" title="Twitter">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+		  
+          <li>
+            <a href="mailto:rsletta@rikosjett.no" title="Email me">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+		  
+		  
+		  		  
+        </ul>
+        <p class="copyright text-muted">
+          <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />All content on &nbsp;<a href="http://rikosjett.no">rikosjett.no</a> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://rikosjett.no" property="cc:attributionName" rel="cc:attributionURL">Ronnie André Bjørvik Sletta</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a> unless stated otherwise.
+	    </p>
+		<p class="theme-by text-muted">
+		  Theme by
+		  <a href="https://github.com/daattali/beautiful-jekyll">beautiful-jekyll</a>
+		</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  
+    
+
+
+  
+	<script src="/js/jquery-1.11.2.min.js"></script>
+  
+	<script src="/js/bootstrap.min.js"></script>
+  
+	<script src="/js/main.js"></script>
+  
+
+
+
+
+
+
+
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-61678220-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<!-- End Google Analytics -->
+
+  
+  </body>
+</html>

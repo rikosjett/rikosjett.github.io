@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Passordhåndtering med KeePass</title>
+
+  <meta name="author" content="Ronnie André Bjørvik Sletta" />
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="rikosjett - et sted om teknologi, spill, småprosjekter, og andre innfall jeg får!" href="/feed.xml" />
+
+  
+    
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+    
+    
+  
+  
+    
+      <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    
+      <link rel="stylesheet" href="/css/main.css" />
+    
+  
+  
+  
+    
+	  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+    
+	  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+    
+  
+
+    
+  
+  
+  
+  
+  
+  <!-- Facebook OpenGraph tags -->
+  <meta property="og:title" content="Passordhåndtering med KeePass" />
+  <meta property="og:type" content="website" />
+  
+  
+  <meta property="og:url" content="http://rikosjett.no/programvare/passordhandtering-med-keepass//" />
+  
+  
+  
+  <meta property="og:image" content="http://rikosjett.no/images/ronnie_avatar.png" />
+  
+</head>
+
+  <body>
+  
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://rikosjett.no">rikosjett</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+	    
+        <li>
+		  <a href="/">Hjem</a>
+		</li>
+		
+        <li>
+		  <a href="/arkiv">Arkiv</a>
+		</li>
+		
+        <li>
+		  <a href="/om">Om</a>
+		</li>
+		
+      </ul>
+    </div>
+	
+	
+	<div class="avatar-container">
+	  <div class="avatar-img-border">
+	    <a href="http://rikosjett.no ">
+	      <img class="avatar-img" src="/images/ronnie_avatar.png" />
+		</a>
+	  </div>
+	</div>
+	
+	
+  </div>
+</nav>  
+
+    <div role="main" class="container main-content">
+      <header class="header-post">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <div class="post-heading">
+        <h1>Passordhåndtering med KeePass</h1>
+        
+        <span class="post-meta"> Lagt til
+  <time datetime="2014-03-26T00:00:00Z" itemprop="datePublished">
+  26
+  Mars,
+    
+  2014</time></span>
+      </div>
+     </div>
+  </div>
+</header>
+
+<article>
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+	  <p>De fleste nettbrukere har nok fått med seg at man bør lage et komplisert passord på nett-tjenester man benytter, selv om det også jevnlig kommer <a href="http://www.dagbladet.no/2014/01/23/tema/aller/teknologi/dinside/data/31434450/">artikler</a> som forteller oss at vi kanskje ikke er så flinke til akkurat det.</p>
+
+<p>Det som ofte kan være et problem er at enkelte passord vi mennesker synes er kompliserte, faktisk ikke tar lang tid å knekke for en datamaskin med de rette verktøyene. Og «kompliserte» passord er også ofte veldig vanskelige å huske, noe som igjen øker sjansen for at vi mennesker tar mindre smarte snarveier for å gjøre det enklere for oss, for eksempel ved å bruke det samme passordet på alle nettsteder man har bruker. Og fra tid til annen rulles det opp «skandaler», der et eller annet kjent selskap har fått sine databaser med brukerdata kompromitert.</p>
+
+<blockquote>
+  <ul>
+    <li><a href="http://www.nrk.no/verden/to-millioner-passord-pa-avveie-1.11396869">«To millioner passord på avveie» -NRK</a> </li>
+    <li><a href="http://www.vg.no/nyheter/innenriks/foto-og-video/over-90-000-foto-no-passord-kan-vaere-paa-avveie/a/10055315/">«Over 90.000 Foto.no passord kan være på avveie» – VG</a></li>
+    <li><a href="http://e24.no/digital/millioner-av-linkedin-passord-paa-avveie/20238830">«Millioner av LinkedIn -passord på avveie» – E24</a></li>
+    <li><a href="http://www.dagbladet.no/2013/11/09/nyheter/adobe/kunde/millioner/it/30062028/">«Hackere stjal 150 millioner passord fra Adobe…» – Dagbladet</a></li>
+  </ul>
+</blockquote>
+
+<p>Men hva kan man gjøre? Dette er hvordan jeg forsøker å håndtere utfordringen.</p>
+
+<h4 id="finnes-det-en-mirakelkur">Finnes det en mirakelkur?</h4>
+
+<p>Dersom man er uhyre disiplinert, og har god hukommelse, kan man selvsagt bruke tips man finner på nettet for å lage gode passord.</p>
+
+<blockquote>
+  <ul>
+    <li><a href="http://www.tv2.no/nyheter/innenriks/norsk-passordekspert-slik-lager-du-et-sikkert-passord-3976189.html">«Slikt lager du et sikkert passord» – TV2</a> </li>
+    <li><a href="http://www.nrk.no/programmer/radio/nitimen/1.1206641">«Slik lager du gode passord» – NRK</a></li>
+  </ul>
+</blockquote>
+
+<p>Jeg innså derimot raskt mine egne begrensinger, og søkte derfor etter en teknisk løsning i form av et såkalt passord-velv. Kort fortalt er det snakk om et program eller en tjeneste som genererer og lagrer gode passord som er vanskelige å knekke selv for datamaskiner. Jeg har tidligere brukt både nett-tjenesten <a href="https://lastpass.com/">Lastpass</a>[Multi-platform] og <a href="https://agilebits.com/onepassword">1Password</a>[Mac,Win,iOS], men landet til slutt på en løsning som heter <a href="http://keepass.info/">KeePass</a>. Dette er en åpen-kildekodeløsning som gir mange muligheter gjennom støtte for mange plattformer, og til en pris det er vanskelig å konkurrere med. Det skal nevnes at Lastpass også er gratis i den grunnleggende utgaven, men når jeg først skal ta litt ekstra vare på sikkerheten liker jeg uansett at kontrollen ligger fullt og helt hos meg selv.</p>
+
+<h4 id="s-hva-er-greia-med-keepass">Så hva er greia med KeePass?</h4>
+
+<!-- _includes/image.html -->
+<div class="post-image-wrapper">
+    
+    <a href="http://keepass.info" title="http://keepass.info/" target="_blank">
+    
+        <img class="post-img" src="/images/keepass/keepass1.png" alt="http://keepass.info/" />
+    
+    </a>
+    
+    
+        <p class="post-image-caption">Foto: http://keepass.info/</p>
+    
+</div>
+
+<ul>
+  <li>Har kryptert database. Det vil si at passordene er uleselige for uvedkomne.</li>
+  <li>Støtter både master-passord og nøkkelfil, eller begge brukt sammen, for økt sikkerhet ved kryptering og dekryptering.</li>
+  <li>Kan brukes som en portabel Windowsapplikasjon, det vil si at den kan kjøres fra en usb-stick dersom man ønsker det.</li>
+  <li>Multiplattform. Støtter både Windows, Mac, Linux, iOS, Android, og mange fler[<a href="http://keepass.info/download.html">http://keepass.info/download.html</a>].</li>
+  <li>Kan fylle ut tekstfelt og dialogbokser automatisk.</li>
+  <li>Genererer meget sterke passord for deg når du trenger det.</li>
+  <li>Støtte for plugins, som ytterligere utvider funksjonaliteten.</li>
+</ul>
+
+<h4 id="ok-hva-gjr-jeg">Ok, hva gjør jeg?</h4>
+
+<!-- _includes/image.html -->
+<div class="post-image-wrapper">
+    
+    <a href="http://keepass.info/" title="Nøkkelfil-generator - Foto: http://keepass.info/" target="_blank">
+    
+        <img class="post-img" src="/images/keepass/getrand_big1.png" alt="Nøkkelfil-generator - Foto: http://keepass.info/" />
+    
+    </a>
+    
+    
+        <p class="post-image-caption">Nøkkelfil-generator - Foto: http://keepass.info/</p>
+    
+</div>
+
+<p>Den korte versjonen er som følger:</p>
+
+<ol>
+  <li>Last ned KeePass fra nettsidene deres [<a href="http://keepass.info/download.html">http://keepass.info/download.html</a>]. Du er ute etter den som kalles Professional Edition (versjonsnummer 2.25 eller høyere), og kan velge mellom «Installer» (installert på datamaskinen) og «Portable» (ha programmet på en flyttbar usb-stick). Jeg tar utgangspunkt i versjonen for windows, installert på datamaskinen.</li>
+  <li>Finn den nedlastede filen (KeePass-X.XX-Setup.exe, der X.XX er versjonsnummeret), og dobbeltklikk for å installere. Følg instruksjonene gjennom hele prosessen.</li>
+  <li>Start KeePass. Du skal nå lage en ny database, ved å trykke på ikonet av en hvit firkant med en stjerne i nedre høyre hjørne. Gi databasen et filnavn, og lagre den der du ønsker.For ekstra sikkerhet kan dette for eksempel gjøres på en separat usb-stick.</li>
+  <li>Det neste vinduet som møter oss er der grunnlaget for sikker lagring legges. Her skal du fylle inn ett sikkert master-passord, som er det eneste passordet du MÅ huske. Dersom du glemmer det, er dine passord for alle praktiske formål tapt. Du får en indikator på passordets kvalitet under tekstfeltet, og her er det bare å bruke alle triksene i boken.For å øke sikkerheten ytterligere kan du opprette en nøkkelfil ved huke av «Key file / provider», og trykke på «Create». Du må da gi nøkkelfilen et navn, og lagre den på et valgfritt sted (som du selvsagt må huske). For ekstra sikkerhet kan du lagre denne på en separat usb-stick, adskilt fra databasen.</li>
+  <li>Følg instruksjonene om å bevege muspekeren over bildet av støy, samt fyll inn tilfeldige tegn i tekstfeltet. Under bildet kan du se hvor mye data den har fått til nøkkelen. Denne nøkkelfilen vil, sammen med passordet ditt, gjøre databasen din praktisk talt uknekkbar (merk at den i teorien selvsagt fremdeles kan knekkes). [<a href="https://www.youtube.com/watch?v=JB1ePElPDjk" data-rel="lightbox-video-0">Brute force hacking attempts on KeePass files – Youtube</a>]</li>
+  <li>I det neste vinduet kan du gi databasen et navn, skrive en kort beskrivelse, samt skrive inn et standard brukernavn den skal bruke når den oppretter nye oppføringer.</li>
+  <li>Når den nye databasen åpnes for første gang, er den fylt opp med noen standardoppføringer. Disse kan du slette dersom du ønsker.</li>
+  <li>VIKTIG! Gå i menyvalget «Tools» og «Options». Velg fanen «Advanced», og huk av boksen for «Automatically save when closing/locking the database». Det er ekstremt viktig at oppføringene du lager faktisk lagres i databasen, slik at du finner tilbake til de senere. Gjør det også gjerne til en vane at du lagrer hver gang du gjør en endring i en oppføring.</li>
+  <li>Trykk på ikonet av en nøkkel med grønn pil for å lage en ny oppføring. Gi oppføringen en tittel, et brukernavn, og en URL. Passordet genereres automatisk. Trykk ok og lagre databasen.</li>
+</ol>
+
+<!-- _includes/image.html -->
+<div class="post-image-wrapper">
+    
+    <a href="http://keepass.info/" title="Legg til oppføring - Foto: http://keepass.info/" target="_blank">
+    
+        <img class="post-img" src="/images/keepass/addentry_big1.png" alt="Legg til oppføring - Foto: http://keepass.info/" />
+    
+    </a>
+    
+    
+        <p class="post-image-caption">Legg til oppføring - Foto: http://keepass.info/</p>
+    
+</div>
+
+<h4 id="var-dette-alt">Var dette alt?</h4>
+
+<p>Nei, selvsagt er det mange muligheter ved KeePass som ikke ble dekket her. Jeg vil følge opp med et senere innlegg der jeg tar for meg noen av muligheten som finnes.</p>
+
+<p>Dette ble det supervanskelige andre-innlegget, men det kom ut til slutt selv om det ble i overkant mange revisjoner først. Jeg setter veldig pris på tilbakemeldinger som kan hjelpe meg videre, være seg format, språk, eller annet ved innlegget som kunne vært bedre, og håper du vil ta deg tid til å si ifra dersom du ser noe.</p>
+
+
+	</div>
+  </div>
+</article>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    <ul class="pager blog-pager">
+      
+      <li class="previous">
+        <a href="/prosjekter/stanford-uni-cs106a-assignments/" data-toggle="tooltip" data-placement="top" title="Stanford Uni &#8211; CS106A Assignments">&larr; Eldre innlegg</a>
+      </li>
+      
+      
+      <li class="next">
+        <a href="/programvare/passord-og-internett-keepass-og-nettlesere/" data-toggle="tooltip" data-placement="top" title="Passord og internett &#8211; KeePass og nettlesere">Nyere innlegg &rarr;</a>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+
+<div class="row disqus-comments">
+  <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    
+<div class="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+	    var disqus_shortname = 'rikosjett';
+	    // ensure that pages with query string get the same discussion
+            var url_parts = window.location.href.split("?");
+            var disqus_url = url_parts[0];	    
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+
+  </div>
+</div>
+
+
+    </div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+          
+          <li>
+            <a href="https://github.com/rsletta" title="GitHub">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+		  
+          <li>
+            <a href="https://twitter.com/rsletta" title="Twitter">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+		  
+          <li>
+            <a href="mailto:rsletta@rikosjett.no" title="Email me">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+		  
+		  
+		  		  
+        </ul>
+        <p class="copyright text-muted">
+          <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />All content on &nbsp;<a href="http://rikosjett.no">rikosjett.no</a> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://rikosjett.no" property="cc:attributionName" rel="cc:attributionURL">Ronnie André Bjørvik Sletta</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a> unless stated otherwise.
+	    </p>
+		<p class="theme-by text-muted">
+		  Theme by
+		  <a href="https://github.com/daattali/beautiful-jekyll">beautiful-jekyll</a>
+		</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  
+    
+
+
+  
+	<script src="/js/jquery-1.11.2.min.js"></script>
+  
+	<script src="/js/bootstrap.min.js"></script>
+  
+	<script src="/js/main.js"></script>
+  
+
+
+
+
+
+
+
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-61678220-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<!-- End Google Analytics -->
+
+  
+  </body>
+</html>

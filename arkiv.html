@@ -1,0 +1,36 @@
+---
+layout: page
+js: /scripts/dropbox.js
+permalink: /arkiv/
+title: Arkiv
+subtitle: Alle innlegg siden tidenes morgen...
+---
+<div class="arkiv-list">
+  {% for post in site.posts %}
+  <article class="arkiv">
+{% if post.date %}<time datetime="{{ post.date | date: "%Y-%m-%dT%H:%M:%SZ" }}" itemprop="datePublished">{% assign m = post.date | date: "%-m" %}
+{{ post.date | date: "%-d" }}
+{% case m %}
+  {% when '1' %}Januar,
+  {% when '2' %}Februar,
+  {% when '3' %}Mars,
+  {% when '4' %}April,
+  {% when '5' %}Mai,
+  {% when '6' %}Juni,
+  {% when '7' %}Juli,
+  {% when '8' %}August,
+  {% when '9' %}September,
+  {% when '10' %}Oktober,
+  {% when '11' %}November,
+  {% when '12' %}Desember,
+{% endcase %}
+{{ post.date | date: "%Y" }}</time>{% endif %}:
+    <a href="{{ post.url | prepend: site.baseurl }}">
+	  {{ post.title }}  {% if post.subtitle %} - {{ post.subtitle }}{% endif %}
+    </a>&nbsp;&nbsp;<a class="clickme" href="#"><span class="caret"></span></a>
+    <div class="dropdownbox">
+    	{{ post.excerpt | truncatewords: 160 | strip_html}}
+    </div>
+   </article>
+  {% endfor %}
+</div>

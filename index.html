@@ -1,0 +1,61 @@
+---
+layout: page
+title: rikosjett.no
+subtitle: et sted om teknologi, spill, småprosjekter, og andre innfall jeg får!
+---
+<div class="posts-list">
+  {% for post in paginator.posts %}
+  <article class="post-preview">
+    <a href="{{ post.url | prepend: site.baseurl }}">
+	  <h2 class="post-title">{{ post.title }}</h2>
+
+	  {% if post.subtitle %}
+	  <h3 class="post-subtitle">
+	    {{ post.subtitle }}
+	  </h3>
+	  {% endif %}
+    </a>
+
+    <p class="post-meta">
+      Lagt til {% if post.date %}<time datetime="{{ post.date | date: "%Y-%m-%dT%H:%M:%SZ" }}" itemprop="datePublished">{% assign m = post.date | date: "%-m" %}
+{{ post.date | date: "%-d" }}
+{% case m %}
+  {% when '1' %}Januar,
+  {% when '2' %}Februar,
+  {% when '3' %}Mars,
+  {% when '4' %}April,
+  {% when '5' %}Mai,
+  {% when '6' %}Juni,
+  {% when '7' %}Juli,
+  {% when '8' %}August,
+  {% when '9' %}September,
+  {% when '10' %}Oktober,
+  {% when '11' %}November,
+  {% when '12' %}Desember,
+{% endcase %}
+{{ post.date | date: "%Y" }}</time>{% endif %}
+    </p>
+    <div class="post-entry">
+      {{ post.excerpt | truncatewords: 160 | strip_html}}
+      <p></p>
+	  <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Les&nbsp;mer...]</a>
+    </div>
+
+   </article>
+  {% endfor %}
+</div>
+
+{% if paginator.total_pages > 1 %}
+<ul class="pager main-pager">
+  {% if paginator.previous_page %}
+  <li class="previous">
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Nyere innlegg</a>
+  </li>
+  {% endif %}
+  {% if paginator.next_page %}
+  <li class="next">
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Eldre innlegg &rarr;</a>
+  </li>
+  {% endif %}
+</ul>
+{% endif %}

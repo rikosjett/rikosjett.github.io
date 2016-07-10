@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Jekyll - websider på en ny måte</title>
+
+  <meta name="author" content="Ronnie André Bjørvik Sletta" />
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="rikosjett - et sted om teknologi, spill, småprosjekter, og andre innfall jeg får!" href="/feed.xml" />
+
+  
+    
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+    
+    
+  
+  
+    
+      <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    
+      <link rel="stylesheet" href="/css/main.css" />
+    
+  
+  
+  
+    
+	  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+    
+	  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+    
+  
+
+    
+  
+  
+  
+  
+  
+  <!-- Facebook OpenGraph tags -->
+  <meta property="og:title" content="Jekyll - websider på en ny måte" />
+  <meta property="og:type" content="website" />
+  
+  
+  <meta property="og:url" content="http://rikosjett.no/prosjekter/jekyll//" />
+  
+  
+  
+  <meta property="og:image" content="http://rikosjett.no/images/ronnie_avatar.png" />
+  
+</head>
+
+  <body>
+  
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://rikosjett.no">rikosjett</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+	    
+        <li>
+		  <a href="/">Hjem</a>
+		</li>
+		
+        <li>
+		  <a href="/arkiv">Arkiv</a>
+		</li>
+		
+        <li>
+		  <a href="/om">Om</a>
+		</li>
+		
+      </ul>
+    </div>
+	
+	
+	<div class="avatar-container">
+	  <div class="avatar-img-border">
+	    <a href="http://rikosjett.no ">
+	      <img class="avatar-img" src="/images/ronnie_avatar.png" />
+		</a>
+	  </div>
+	</div>
+	
+	
+  </div>
+</nav>  
+
+    <div role="main" class="container main-content">
+      <header class="header-post">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <div class="post-heading">
+        <h1>Jekyll - websider på en ny måte</h1>
+        
+        <span class="post-meta"> Lagt til
+  <time datetime="2015-08-22T00:00:00Z" itemprop="datePublished">
+  22
+  August,
+    
+  2015</time></span>
+      </div>
+     </div>
+  </div>
+</header>
+
+<article>
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+	  <p>Jeg har hatt websider i en eller annen form kontinuerlig siden 1996, og det har vært en enorm utvikling siden jeg startet med enkle sider kodet i notepad. Siden det har jeg vært innom en mengde verktøy som Frontpage, Dreamweaver, Drupal, Joomla, og de siste årene har jeg benyttet meg av Wordpress som plattform. Men siden jeg ikke akkurat har hyppig produksjon av innhold, har jeg lenge følt at alt jeg har drevet med har vært overkill, i hovedsak drevet av nysgjerrighet. Ved en tilfeldighet kom jeg over noe nytt som vekket interessen min; noe som ville ta publiseringen” min tilbake til noe mye enklere og lettere. Jeg oppdaget Jekyll.</p>
+
+<h3 id="hva-er-jekyll">Hva er Jekyll?</h3>
+
+<p>Jekyll er et verktøy for å generere statiske websider. Det er skrevet i Ruby, og bruker en kombinasjon av templates og rene tekstfiler (feks skrevet i <a href="http://daringfireball.net/projects/markdown/">Markdown</a> for innhold, for å generere sider bestående av vanlig HTML, CSS, og Javascript. Disse kan så legges på en hvilken som helst webserver, fordi de ikke krever avanserte funksjoner som feks PHP eller MySQL. Dette gjør også at det, i all hovedsak, lastes raskere enn dynamisk genererte websider.</p>
+
+<p>Jekyll kan installeres relativt enkelt på din egen datamaskin, slik at du kan generere websidene der før de lastes opp. Men den enkleste metoden er faktisk å benytte seg av GitHub som hosting. Dersom du ikke skremmes av Git, kan du nemlig la de generere sidene for deg. Det er selvsagt noen ulemper også med det. For det første mister man noen muligheter man kan få via plug-ins i Jekyll, fordi de ikke bruker det. Videre er det litt tungvint å måtte laste opp for å generere sidene, bare for å teste at forandringer man gjør fungerer. Jeg anbefaler derfor at du uansett installerer Jekyll på maskinen din, om ikke for annet enn bekvemmelighet under utvikling.</p>
+
+<h3 id="er-det-vanskelig--komme-i-gang-med">Er det vanskelig å komme i gang med?</h3>
+<p>Mja, det kan kanskje oppfattes som litt vanskelig, men når du først kommer igang er det egentlig ikke det. Dersom du vurderer å prøve det ut, tror jeg det samtidig er et tegn på at ferdighetsnivået er litt over det grunnleggende, og da vil det nok gå rimelig greit dersom du leser deg litt opp før du begynner. Jeg brukte noen timer fra jeg begynte, til data var overført fra wordpress og domenet pekte mot GitHub. Og derfra er det bare å skrive så det ryker av tastene, eller eventuelt tilpasse utseendet videre.</p>
+
+<blockquote>
+
+  <ul>
+    <li><a href="http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html">Blogging Like a Hacker</a></li>
+    <li><a href="http://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/">Build A Blog With Jekyll And GitHub Pages</a></li>
+    <li><a href="http://jekyllrb.com/docs/home/">Jekyll - Official site</a></li>
+    <li><a href="http://paulstamatiou.com/how-to-wordpress-to-jekyll/">How To: WordPress to Jekyll</a></li>
+    <li><a href="http://alanwsmith.com/jekyll-liquid-date-formatting-examples">Jekyll Date Formatting Examples (for norsk datostempling)</a></li>
+    <li><a href="http://wptavern.com/export-your-wordpress-blog-to-jekyll-with-one-click">Export Your WordPress Blog to Jekyll with One Click</a></li>
+    <li><a href="http://blog.8thcolor.com/en/2014/05/migrate-from-wordpress/">From Wordpress to Jekyll</a></li>
+    <li><a href="http://blog.codeinside.eu/2014/09/13/How-We-Moved-From-Wordpress-To-Jekyll-On-Windows/">How we moved from Wordpress to Jekyll - on Windows</a></li>
+    <li><a href="http://jekyllthemes.org">Jekyll Themes</a></li>
+  </ul>
+</blockquote>
+
+<h3 id="er-det-vanskelig--bruke">Er det vanskelig å bruke?</h3>
+<p>På samme måte som de fleste publiseringsplattformen, skiller også Jekyll mellom innhold og utseende. Den store forskjellen er at man med Jekyll lagrer innholdet i egne filer, i stedet for i en database slik som feks Wordpress. Man lager et oppsett med maler for hvordan sidene skal se ut ved hjelp av feks html, css, javascript, osv. I disse sidene bruker man noe som kalles Liquid for å sette opp innfletting av innhold. Innlegg lages som egne filer, som får en innledning(Front matter) der man kan definere et sett attributter for posten. Jekyll går så gjennom alle filer, og syr sammen de statiske sidene.</p>
+
+<p>Sidene kan skrives i html om du vil, men også i et markup-språk som kalles <a href="http://daringfireball.net/projects/markdown/">Markdown</a>. Hva <em>det</em> er kan fort bli et helt eget innlegg, men kort fortalt har det utspring hos John Gruber ved <a href="http://daringfireball.net/projects/markdown/">Daring Fireball</a>, som et enkelt alternativ til tunge HTML-koder for å formatere en tekst. I stedet har man en enkel syntaks, som i tilfellet her konverteres til HTML av Jekyll. Ved hjelp av Markdown kan man veldig raskt skrive og formatere et innlegg på feks en blog.</p>
+
+<p><em>Et eksempel på Markdown:</em></p>
+
+<h2 id="dette-er-en-overskrift">Dette er en overskrift</h2>
+
+<h3 id="og-denne-er-litt-mindre">Og denne er litt mindre</h3>
+
+<p>I markdown kan man også ha <strong>fet</strong>  og <em>kursiv</em> tekst. Man kan lenke <a href="direkte">direkte</a> eller ved å lage en <a href="fotnote">fotnote</a>.</p>
+
+<h4 id="kode">Kode:</h4>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html">## Dette er en overskrift
+
+### Og denne er litt mindre
+
+I markdown kan man også ha **fet**  og *kursiv* tekst. Man kan lenke [direkte](direkte) eller ved å lage en [fotnote][6].
+
+[6]:fotnote</code></pre></div>
+
+<h3 id="s-hva-er-konklusjonen">Så hva er konklusjonen?</h3>
+
+<p>Man skal selvsagt være forsiktig med å komme med alt for bastante påstander, spesielt når man fremdeler er “nyforelsket” i noe spennende man har funnet, men jeg tror nok at Jekyll kan tjene mitt formål i all overskuelig fremtid. For en del vil nok Wordpress fremdeles være det greieste valget, men dersom alt du skal publisere er noen velvalgte ord fra tid til annen, kan kanskje Jekyll være verdt å prøve. Men for all del; undersøk nøye i forkant av en eventuell stor konvertering, og vær også bevisst at Jekyll har sine ulemper.</p>
+
+<p>Lykke til! <img class="emoji" title=":grinning:" alt=":grinning:" src="https://assets.github.com/images/icons/emoji/unicode/1f600.png" height="20" width="20" align="absmiddle" /></p>
+
+
+	</div>
+  </div>
+</article>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    <ul class="pager blog-pager">
+      
+      <li class="previous">
+        <a href="/teknologi/nexus-player-verdt-et-forsok/" data-toggle="tooltip" data-placement="top" title="Nexus Player &#8211; verdt et forsøk?">&larr; Eldre innlegg</a>
+      </li>
+      
+      
+    </ul>
+  </div>
+</div>
+
+
+<div class="row disqus-comments">
+  <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    
+<div class="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+	    var disqus_shortname = 'rikosjett';
+	    // ensure that pages with query string get the same discussion
+            var url_parts = window.location.href.split("?");
+            var disqus_url = url_parts[0];	    
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+
+  </div>
+</div>
+
+
+    </div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+          
+          <li>
+            <a href="https://github.com/rsletta" title="GitHub">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+		  
+          <li>
+            <a href="https://twitter.com/rsletta" title="Twitter">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+		  
+          <li>
+            <a href="mailto:rsletta@rikosjett.no" title="Email me">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+		  
+		  
+		  		  
+        </ul>
+        <p class="copyright text-muted">
+          <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />All content on &nbsp;<a href="http://rikosjett.no">rikosjett.no</a> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://rikosjett.no" property="cc:attributionName" rel="cc:attributionURL">Ronnie André Bjørvik Sletta</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a> unless stated otherwise.
+	    </p>
+		<p class="theme-by text-muted">
+		  Theme by
+		  <a href="https://github.com/daattali/beautiful-jekyll">beautiful-jekyll</a>
+		</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  
+    
+
+
+  
+	<script src="/js/jquery-1.11.2.min.js"></script>
+  
+	<script src="/js/bootstrap.min.js"></script>
+  
+	<script src="/js/main.js"></script>
+  
+
+
+
+
+
+
+
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-61678220-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<!-- End Google Analytics -->
+
+  
+  </body>
+</html>
