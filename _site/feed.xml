@@ -7,7 +7,7 @@
     <atom:link href="http://rikosjett.no/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
-        <title>Jekyll - websider på en ny måte</title>
+        <title>Jekyll - websider på en ny(gammel) måte</title>
         <description>
           
           Jeg har hatt websider i en eller annen form kontinuerlig siden 1996, og det har vært en enorm utvikling siden jeg startet med enkle sider kodet i notepad. Siden det har jeg vært innom en mengde verktøy som Frontpage, Dreamweaver, Drupal, Joomla, og de siste årene har jeg benyttet meg...
@@ -94,8 +94,8 @@ Assignments on Github
           Hvem sier at man må kjøpe et ferdig system for å få spilt musikken sin i hele boligen sin? Mange har sikkert merket seg systemer som feks SONOS, og synes det virker som en fantastisk mulighet. Men det er jo altfor enkelt å kjøpe et ferdig system. Enhver nerd med...
         </description>
         <pubDate>Sun, 24 May 2009 00:00:00 +0200</pubDate>
-        <link>http://rikosjett.no/prosjekter/tra%CC%8Adl%C3%B8se-musikksoner/</link>
-        <guid isPermaLink="true">http://rikosjett.no/prosjekter/tra%CC%8Adl%C3%B8se-musikksoner/</guid>
+        <link>http://rikosjett.no/prosjekter/tr%C3%A5dl%C3%B8se-musikksoner/</link>
+        <guid isPermaLink="true">http://rikosjett.no/prosjekter/tr%C3%A5dl%C3%B8se-musikksoner/</guid>
       </item>
     
   </channel>

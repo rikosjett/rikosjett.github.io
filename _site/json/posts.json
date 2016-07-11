@@ -1,0 +1,53 @@
+{
+    "posts": [
+        
+        {
+            "title": "Jekyll - websider på en ny(gammel) måte",
+            "url": "http://rikosjett.no/prosjekter/jekyll/",
+            "date": "2015-08-22T00:00:00+02:00"
+        },
+        
+        {
+            "title": "Nexus Player &amp;#8211; verdt et forsøk?",
+            "url": "http://rikosjett.no/teknologi/nexus-player-verdt-et-forsok/",
+            "date": "2015-05-14T00:00:00+02:00"
+        },
+        
+        {
+            "title": "Er du klar for litt nostalgi?",
+            "url": "http://rikosjett.no/spill/er-du-klar-for-litt-nostalgi/",
+            "date": "2015-04-19T00:00:00+02:00"
+        },
+        
+        {
+            "title": "5 steg til custom firmware på Asus RT-N66U",
+            "url": "http://rikosjett.no/prosjekter/5-steg-til-custom-firmware-pa-asus-rt-n66u/",
+            "date": "2015-04-06T00:00:00+02:00"
+        },
+        
+        {
+            "title": "Passord og internett &amp;#8211; KeePass og nettlesere",
+            "url": "http://rikosjett.no/programvare/passord-og-internett-keepass-og-nettlesere/",
+            "date": "2014-10-06T00:00:00+02:00"
+        },
+        
+        {
+            "title": "Passordhåndtering med KeePass",
+            "url": "http://rikosjett.no/programvare/passordhandtering-med-keepass/",
+            "date": "2014-03-26T00:00:00+01:00"
+        },
+        
+        {
+            "title": "Stanford Uni &amp;#8211; CS106A Assignments",
+            "url": "http://rikosjett.no/prosjekter/stanford-uni-cs106a-assignments/",
+            "date": "2010-05-10T00:00:00+02:00"
+        },
+        
+        {
+            "title": "Trådløse musikksoner",
+            "url": "http://rikosjett.no/prosjekter/tr%C3%A5dl%C3%B8se-musikksoner/",
+            "date": "2009-05-24T00:00:00+02:00"
+        }
+        
+    ]
+}

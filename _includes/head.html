@@ -10,23 +10,24 @@
   {% if page.subtitle %}
   <meta name="description" content="{{ page.subtitle }}">
   {% endif %}
+
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
-  {% if page.common-ext-css %}
-    {% for css in page.common-ext-css %}
+  {% if layout.common-ext-css %}
+    {% for css in layout.common-ext-css %}
       <link rel="stylesheet" href="{{ css }}" />
+    {% endfor %}
+  {% endif %}    
+  
+  {% if layout.common-css %}
+    {% for css in layout.common-css %}
+      <link rel="stylesheet" href="{{ css | prepend: site.baseurl | replace: '//', '/' }}" />
     {% endfor %}
   {% endif %}  
   
-  {% if page.common-css %}
-    {% for css in page.common-css %}
-      <link rel="stylesheet" href="{{ css | prepend: site.baseurl | replace: '//', '/' }}" />
-    {% endfor %}
-  {% endif %}
-  
-  {% if page.common-googlefonts %}
-    {% for font in page.common-googlefonts %}
-	  <link rel="stylesheet" href="//fonts.googleapis.com/css?family={{ font }}" />
+  {% if layout.common-googlefonts %}
+    {% for font in layout.common-googlefonts %}
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family={{ font }}" />
     {% endfor %}
   {% endif %}
 
@@ -41,13 +42,13 @@
       <link rel="stylesheet" href="{{ css | prepend: site.baseurl | replace: '//', '/' }}" />
     {% endfor %}
   {% endif %}
-  
+
   {% if page.googlefonts %}
     {% for font in page.googlefonts %}
-	  <link rel="stylesheet" href="//fonts.googleapis.com/css?family={{ font }}" />
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family={{ font }}" />
     {% endfor %}
   {% endif %}
-  
+
   <!-- Facebook OpenGraph tags -->
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
   <meta property="og:type" content="website" />
@@ -65,4 +66,5 @@
   {% else %}
   <meta property="og:image" content="" />
   {% endif %}
+  
 </head>

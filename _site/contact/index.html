@@ -11,9 +11,10 @@
   <meta name="author" content="Ronnie André Bjørvik Sletta" />
   
   
+
   <link rel="alternate" type="application/rss+xml" title="rikosjett - et sted om teknologi, spill, småprosjekter, og andre innfall jeg får!" href="/feed.xml" />
 
-    
+      
   
   
     
@@ -21,7 +22,7 @@
     
       <link rel="stylesheet" href="/css/main-minimal.css" />
     
-  
+    
   
   
 
@@ -32,29 +33,31 @@
       <link rel="stylesheet" href="/css/contact.css" />
     
   
-  
+
   
     
-	  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lobster" />
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lobster" />
     
   
-  
+
   <!-- Facebook OpenGraph tags -->
   <meta property="og:title" content="rikosjett" />
   <meta property="og:type" content="website" />
   
   
-  <meta property="og:url" content="http://rikosjett.no/contact" />
+  <meta property="og:url" content="http://rikosjett.no/contact/" />
   
   
   
   <meta property="og:image" content="http://rikosjett.no/images/ronnie_avatar.png" />
   
+  
 </head>
+
 
   <body>
 
-    <div role="main" class="container main-content">
+    <div role="main" class="container">
       <p>Just kidding, you can’t contact me here.</p>
 
 <p>But this little page shows you how you can write a minimalist page if you ever want to have some page without the header and all the other bulky stuff.</p>
@@ -76,7 +79,7 @@
 	Ronnie André Bjørvik Sletta
 	&nbsp;&nbsp;&bull;&nbsp;&nbsp;
 	
-	  2015
+	  2016
 	
 	
     
@@ -89,18 +92,28 @@
     
 
 
-  
-	<script src="/js/jquery-1.11.2.min.js"></script>
-  
-	<script src="/js/bootstrap.min.js"></script>
-  
-
-
-
 
 
   
 	<script src="/js/contact.js"></script>
+  
+
+
+
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+      <script>
+      	if (typeof jQuery == 'undefined') {
+      	  document.write('<script src="/js/jquery-1.11.2.min.js"></scr' + 'ipt>');
+      	}
+      </script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/js/bootstrap.min.js"></script>
+    
   
 
 
@@ -115,6 +128,7 @@
 		ga('send', 'pageview');
 	</script>
 	<!-- End Google Analytics -->
+
 
   
   </body>
